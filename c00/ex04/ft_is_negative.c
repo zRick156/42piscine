@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rick <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 18:05:15 by rick              #+#    #+#             */
-/*   Updated: 2023/02/19 00:33:15 by rick             ###   ########.fr       */
+/*   Created: 2023/02/19 00:35:29 by rick              #+#    #+#             */
+/*   Updated: 2023/02/19 00:37:48 by rick             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include<unistd>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_is_negatice(int n)
 {
-	int	a;
-
-	a = 123;
-	while (a > 97)
-	{
-		a--;
-		write(1, &a, 1);
-	}
+	if (n < 0)
+		write(1, "N", 1);
+	else
+		write(1, "P", 1);
 }
