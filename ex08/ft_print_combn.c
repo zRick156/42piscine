@@ -6,10 +6,14 @@
 /*   By: rick <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 20:22:49 by rick              #+#    #+#             */
-/*   Updated: 2023/02/17 20:38:25 by rick             ###   ########.fr       */
+/*   Updated: 2023/02/18 01:09:18 by rick             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 
-void	ft_print_combn()
+void	ft_print_combn(int n)
+{
+	char n[9];
+
+}
