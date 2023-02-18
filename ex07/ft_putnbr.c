@@ -6,11 +6,26 @@
 /*   By: rick <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 19:19:15 by rick              #+#    #+#             */
-/*   Updated: 2023/02/17 20:39:30 by rick             ###   ########.fr       */
+/*   Updated: 2023/02/18 01:27:12 by rick             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
+
+int	ft_controllo(int nb)
+{
+	if (nb == 0)
+	{
+		write(1, "0", 1);
+		return (0);
+	}
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		return (nb *= -1);
+	}
+	return (nb);
+}
 
 void	ft_putnbr(int nb)
 {
@@ -18,6 +33,7 @@ void	ft_putnbr(int nb)
 	int	contatore;
 	int	num[10];
 
+	nb = ft_controllo(nb);
 	contatore = 0;
 	a = nb;
 	while (a > 0)
@@ -37,5 +53,5 @@ void	ft_putnbr(int nb)
 
 int	main(void)
 {
-	ft_putnbr(42);
+	ft_putnbr(-42);
 }
