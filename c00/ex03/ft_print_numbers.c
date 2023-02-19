@@ -6,7 +6,7 @@
 /*   By: rick <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 18:13:08 by rick              #+#    #+#             */
-/*   Updated: 2023/02/19 00:33:50 by rick             ###   ########.fr       */
+/*   Updated: 2023/02/19 14:02:24 by rick             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,17 @@
 
 void	ft_print_numbers(void)
 {
-	int	n;
-	int	a;
+	int	prt_num;
 
-	n = 0;
-	while (n <= 9)
+	prt_num = 48;
+	while (prt_num <= 57)
 	{
-		a = n + 48;
-		write (1, &a, 1);
-		n++;
+		write (1, &prt_num, 1);
+		prt_num++;
 	}
+}
+
+int	main(void)
+{
+	ft_print_numbers();
 }
