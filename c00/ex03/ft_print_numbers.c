@@ -6,7 +6,7 @@
 /*   By: rick <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 18:13:08 by rick              #+#    #+#             */
-/*   Updated: 2023/02/19 14:02:24 by rick             ###   ########.fr       */
+/*   Updated: 2023/02/19 14:41:55 by rick             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ void	ft_print_numbers(void)
 		write (1, &prt_num, 1);
 		prt_num++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
 }
